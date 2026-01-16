@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Library Catalog</title>
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+  <header class="shell">
+    <div class="title-block">
+      <h1>Book Library Catalog</h1>
+      <p class="subtitle">Track and filter your reading list without a backend.</p>
+    </div>
+  </header>
+
+  <main class="shell layout">
+    <section class="panel" aria-labelledby="add-book-heading">
+      <div class="panel__header">
+        <h2 id="add-book-heading">Add a Book</h2>
+        <p class="note">Fields are minimal: title and author.</p>
+      </div>
+      <form id="book-form" class="form" autocomplete="off">
+        <label class="field">
+          <span>Title</span>
+          <input id="title-input" name="title" type="text" placeholder="e.g., The Pragmatic Programmer" required>
+        </label>
+        <label class="field">
+          <span>Author</span>
+          <input id="author-input" name="author" type="text" placeholder="e.g., Andy Hunt" required>
+        </label>
+        <button type="submit" class="btn primary">Add Book</button>
+      </form>
+    </section>
+
+    <section class="panel" aria-labelledby="filters-heading">
+      <div class="panel__header">
+        <h2 id="filters-heading">Filter</h2>
+        <p class="note">Filter by author name (case-insensitive, partial match).</p>
+      </div>
+      <label class="field">
+        <span>Author contains</span>
+        <input id="author-filter" type="search" placeholder="Start typing an author name...">
+      </label>
+      <button id="clear-filter" class="btn ghost" type="button">Clear Filter</button>
+    </section>
+
+    <section class="panel" aria-labelledby="list-heading">
+      <div class="panel__header">
+        <div>
+          <h2 id="list-heading">Books</h2>
+          <p class="note">Filtered in real-time as you type.</p>
+        </div>
+        <div class="badge" id="count-badge" aria-live="polite"></div>
+      </div>
+      <div id="book-list" class="list" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>
