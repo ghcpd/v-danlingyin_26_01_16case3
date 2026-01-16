@@ -1,0 +1,10 @@
+App Name: Book Library Catalog
+
+Core Features:
+- Add books (title, author)
+- Display book list
+- Filter books by author
+
+Constraints:
+- No backend
+- No external APIs
