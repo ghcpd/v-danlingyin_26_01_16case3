@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library Catalog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Book Library Catalog</h1>
+        </header>
+
+        <main>
+            <!-- Add Book Section -->
+            <section class="add-book-section">
+                <h2>Add New Book</h2>
+                <form id="add-book-form">
+                    <div class="form-group">
+                        <label for="book-title">Title</label>
+                        <input 
+                            type="text" 
+                            id="book-title" 
+                            placeholder="Enter book title" 
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="book-author">Author</label>
+                        <input 
+                            type="text" 
+                            id="book-author" 
+                            placeholder="Enter author name" 
+                            required
+                        >
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Book</button>
+                </form>
+            </section>
+
+            <!-- Filter Section -->
+            <section class="filter-section">
+                <h2>Filter Books</h2>
+                <div class="form-group">
+                    <label for="filter-author">Filter by Author</label>
+                    <input 
+                        type="text" 
+                        id="filter-author" 
+                        placeholder="Type author name to filter..."
+                    >
+                </div>
+                <button id="clear-filter" class="btn btn-secondary">Clear Filter</button>
+            </section>
+
+            <!-- Book List Section -->
+            <section class="book-list-section">
+                <h2>Book Collection <span id="book-count">(0 books)</span></h2>
+                <div id="book-list" class="book-list">
+                    <p class="empty-message">No books in the library yet. Add your first book above!</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Book Library Catalog &copy; 2026</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
