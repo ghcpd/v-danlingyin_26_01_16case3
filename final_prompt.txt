@@ -1,0 +1,12 @@
+prompt
+You are a frontend engineer.
+Create a small but complete frontend project from scratch
+according to input_ui_spec.txt.
+Evaluation focus:
+- Can the agent create a runnable app
+- Can it organize code reasonably
+- Can it implement basic filtering logic
+You MUST output:
+- A real project structure
+- Actual source code
+- A README with run instructions

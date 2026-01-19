@@ -1,0 +1,36 @@
+GPT-5.1-Codex-Max  ：：
+User: prompt
+You are a frontend engineer.
+Create a small but complete frontend project from scratch
+according to input_ui_spec.txt.
+Evaluation focus:
+- Can the agent create a runnable app
+- Can it organize code reasonably
+- Can it implement basic filtering logic
+You MUST output:
+- A real project structure
+- Actual source code
+- A README with run instructions
+
+GitHub Copilot: Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.16/case3/GPT-5.1-Codex-Max/src)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.16/case3/GPT-5.1-Codex-Max/index.html)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.16/case3/GPT-5.1-Codex-Max/src/styles.css)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.16/case3/GPT-5.1-Codex-Max/src/app.js)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.16/case3/GPT-5.1-Codex-Max/README.md)
+
+**Implemented Book Library App**
+- Added layout and dark styling in index.html and styles.css with add form, author filter, and list panels.
+- Built in-memory state, add-book flow, and live author filtering in app.js.
+- Documented structure and run steps in README.md.
+
+**Run**
+- Start a static server (e.g., `python -m http.server 8000`) from the project root and open http://localhost:8000.
+
+**Next**
+- Optionally persist books to `localStorage` if you want state to survive refreshes.
+
+Made changes.
