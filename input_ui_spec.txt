@@ -1,15 +1,10 @@
-App Name: Product Comparison App
+App Name: Book Library Catalog
 
 Core Features:
-- Display a list of products
-- Each product has:
-  - Name
-  - Price
-  - Rating
-- Allow selecting up to two products to compare
-- Show comparison view only when two products are selected
+- Add books (title, author)
+- Display book list
+- Filter books by author
 
 Constraints:
-- Use mock product data
 - No backend
-- No authentication
+- No external APIs
